@@ -8,6 +8,10 @@
         <div class="container"></div>
         <script>
             const getTitle = document.querySelector("title")
+            const reset = () => {
+                const tagElements = document.querySelectorAll(".tag")
+                tagElements.forEach(v => v.remove())
+            }
         </script>
     </body>
 </html>
