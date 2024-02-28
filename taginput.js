@@ -40,6 +40,13 @@ input.addEventListener("keyup", (event) => {
     }
 })
 
+input.addEventListener("keydown", (event) => {
+    if (event.code === "Backspace" && tags.length > 0 && input.value == "") {
+        tags.splice(tabs.length -1)
+        addTag()
+    }
+})
+
 document.addEventListener("click", (event) => {
     if (event.target.tagName === "I") {
         const value = event.target.getAttribute("data-item")
