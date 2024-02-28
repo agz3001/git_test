@@ -42,7 +42,7 @@ input.addEventListener("keyup", (event) => {
 
 input.addEventListener("keydown", (event) => {
     if (event.code === "Backspace" && tags.length > 0 && input.value == "") {
-        tags.splice(tabs.length -1)
+        tags.splice(tags.length -1)
         addTag()
     }
 })
