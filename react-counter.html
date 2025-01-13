@@ -19,10 +19,10 @@
         const Count = () => {
             const [count, setCount] = useState(0)
             const increase = () => {
-                setCount(count +1)
+                setCount(n => n +1)
             }
             const decrease = () => {
-                setCount(count -1)
+                setCount(n => n -1)
             }
 
             return (
