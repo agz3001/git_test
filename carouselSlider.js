@@ -1,4 +1,4 @@
-// Vue
+// Vue, compositionAPI
 const app = Vue.createApp({
     setup(){
         const selectedIndex = Vue.ref(0)
